@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'roboto',sans-serif;
+    margin: 0;
+}
+H1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+header{background-color: greenyellow;}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.68;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: green;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/imagen principal biologia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#La-biologia{
+
+}
+#La-biologia .container{
+   text-align: center; 
+   padding: 200px 12px;
+}
+#ramas-de-la-biologia{
+
+}
+#ramas-de-la-biologia .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+#Genetica{
+
+}
+#Genetica .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#microbiologia{
+
+}
+#microbiologia .container{
+    text-align: center;
+    padding: 200ps 12px;
+}
+#zoologia{
+
+}
+#zoologia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#ecologia{
+
+}
+#ecologia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+footer{
+    background-color: rgb(136, 165, 92);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+}
+footer .container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+       flex-direction: row; 
+       justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+}
+#La-biologia .container{
+   display: flex;
+   justify-content: space-evenly;
+}
+#La-biologia .texto{
+    width: 50%;
+    max-width: 500px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#La-biologia h2{
+    margin-top: 0px;
+}
+#La-biologia .img-container{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/images.png");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 700px;
+}
+
+#ramas-de-la-biologia .container{
+   display: flex;
+   justify-content: space-evenly;
+}
+#ramas-de-la-biologia .texto{
+    width: 50%;
+    max-width: 500px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#ramas-de-la-biologia h2{
+    margin-top: 0px;
+}
+#ramas-de-la-biologia .img-container{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/ramas.png");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 700px;
+}
+#Genetica .container{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #Genetica .texto{
+     width: 50%;
+     max-width: 500px;
+     text-align: initial;
+     padding-left: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ #GENETICA h2{
+    margin-top: 0px;
+ }
+ #Genetica .img-container{
+     background-image: url("media/adn.jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 600px;
+     width: 700px;
+ }
+ #microbiologia .container{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #microbiologia .texto{
+     width: 50%;
+     max-width: 500px;
+     text-align: initial;
+     padding-left: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ #microbiologia h2{
+    margin-top: 0px;
+ }
+ #microbiologia .img-container{
+     background-image: url("media/microbiologia.jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 600px;
+     width: 700px;
+ }
+ #zoologia .container{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #zoologia .texto{
+     width: 50%;
+     max-width: 500px;
+     text-align: initial;
+     padding-left: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ #zoologia h2{
+    margin-top: 0px;
+ }
+ #zoologia .img-container{
+     background-image: url("media/zoologia\ .jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 600px;
+     width: 700px;
+ }
+
+
+
+
+
+
+ #ecologia .container{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #ecologia .texto{
+     width: 50%;
+     max-width: 500px;
+     text-align: initial;
+     padding-left: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ #ecologia h2{
+    margin-top: 0px;
+ }
+ #ecologia .img-container{
+     background-image: url("media/dibujo.png");
+     background-size: cover;
+     background-position: center center;
+     height: 600px;
+     width: 700px;
+ }
+
+
+
+
+
+
+
+
+ #image-gallery .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.image-container {
+    width: 30%; /* Ajustar el ancho según tus necesidades */
+    height: 300px; /* Ajustar la altura según tus necesidades */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.image1 {
+    background-image: url('media/imagen1.jpg');
+}
+
+.image2 {
+    background-image: url('media/imagen2.jpg');
+}
+
+.image3 {
+    background-image: url('media/imagen3.jpg');
+}
+.image-container:hover {
+    transform: scale(1.5);
+}
+
+
+
+#related-content .container {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#related-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.related-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.related-item h3 {
+    margin-top: 0;
+}
+
+.related-item p {
+    margin: 0;
+}
